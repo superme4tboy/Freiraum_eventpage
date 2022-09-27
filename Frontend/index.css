@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body{
+  background-color: #fffbf0;
+  padding: 0;
+  margin: 0;
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  transition: 0.5s;
+}
+
+.nav-bar{
+  margin: 25px;
+  height: 48px;
+  padding: 0px;
+  text-decoration: none;
+}
+.nav-bar img{
+  position: absolute;
+}
+.button-container{
+  float: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+.topL-nav-button:hover{
+  cursor: pointer;
+  color: #746c64;
+  transition: 0.3s;
+}
+
+
+.topL-nav-button{
+  position: relative;
+  font-size: 25px;
+  display: inline;
+  padding-left: 40px;
+}
+
+.topR-nav-button{
+  padding-top: 5px;
+  float: right;
+  position: relative;
+  font-size: 25px;
+  display: inline;
+  padding-left: 40px;
+}
+
+
+
+.side-container{
+  float: left;
+  width: 0px;
+  height: 100vh;
+
+}
+.sideNav{
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  width: inherit;
+  font-size: 25px;
+  float: right;
+  height: inherit;
+  transition: all 0.5s ease;
+}
+
+.sideNav a{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.map{
+  height: 480px;
+}
